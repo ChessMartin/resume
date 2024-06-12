@@ -1,0 +1,101 @@
+\documentclass[
+	a4paper, % Uncomment for A4 paper size (default is US letter)
+	10pt, % Default font size, can use 10pt, 11pt or 12pt
+]{resume} % Use the resume class
+
+%------------------------------------------------
+\usepackage{pifont}
+
+\name{Martin Le Formal} % Your name to appear at the top
+
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
+\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+
+\address{17 boulevard de Beausejour \\ Paris, 75016} % Main address
+
+\address{(+33) 6 49 89 13 00 \\ martin.le.formal@efrei.net} % Contact information
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{rSection}{Education}
+	\textbf{EFREI Paris, France} \hfill 2021-2024 (expected) \\
+	\textit{\textbf{Master of Science in Computer Science and Data Engineering}} \\
+	Relevant Coursework: Statistics, Machine Learning, Big Data Frameworks, Cloud Computing
+
+	\textbf{EFREI Paris, France} \hfill 2018-2021 \\
+	\textit{\textbf{Bachelor of Science in Computer Science \& Engineering}} \\
+	Relevant Coursework: Linear Algebra, Probability, Analysis, Algorithmics, Electronics, Databases
+
+\end{rSection}
+
+\begin{rSection}{Relevant Skills}
+
+	\begin{tabular}{@{} >{\bfseries}l @{\hspace{4ex}} l @{}}
+		Statistical Learning    & Linear Regression, Classification, SVM, PCA                \\
+		Data Analysis w/ Python & NumPy, pandas, SciPy, scikit-learn, matplotlib, PyTables   \\
+		Low-Latency \CC         & Compile-Time Dispatch, Cache Optimization, Lock-Free, SIMD \\
+		TUI Environment         & Linux, I3, Tmux, Fish-Shell, Neovim                        \\
+	\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Experience}
+
+	\begin{rSubsection}{Embedded Software Engineer - Missile Optics and Electronics}{Apr 2024 - Sep 2024 (current)}{Thales LAS}{Elancourt, France}
+		\item Rafale-F4 command simulation to the Talios POD through a MIL-STD-1553b bus
+	\end{rSubsection}
+
+	\begin{rSubsection}{Quant Developer - Automated Market Making - Equities \& Derivatives}{Oct 2022 - Apr 2023}{BNP Paribas CIB}{Paris, France}
+		\item Created a log parser through PySpark used for metrics extraction from large files (50GB)
+		\item Developed an extension to the Python pickle library allowing serialization of runtime polymorphic instances
+		\item Refactored the market simulation engine launcher used for backtesting automation
+		\item Implemented continuous integration for python libraries development through 12 test cases
+		\item Rewrote the recuperation \& archiving process for production servers configuration files
+	\end{rSubsection}
+
+	\begin{rSubsection}{Quant Developer - Automated Market Making - Equities \& Derivatives}{Jan 2022 - Aug 2022}{BNP Paribas CIB}{Hong Kong SAR, China}
+		\item Developed a memory efficient network packets parser to generate market data file (2m30 for 15GB pcap)
+		\item Integrated the parser to the FPGA listener through a multimap buffer and spinlock implementation
+		\item Tested the new order management system for the Thailand Stock Exchange through 60 test cases
+		\item Automated the generation of production servers reports measuring market order success rate
+	\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PERSONNAL PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Personal Projects}
+
+	\begin{rSubsection}{High Frequency Trading in a limited order book}{Python}{Avellaneda-Stoikov research paper implementation}{}
+		\item Order Book replication in pandas using LOBSTER datasets
+		\item Mid-price adjustment based on inventory strategy with finite horizon
+		\item Spread adjustment on reservation price from volatility
+	\end{rSubsection}
+
+	\begin{rSubsection}{Fast order book design using a custom Hash Table}{\CC}{}{}
+		\item Compile-Time oriented design (Templates, Concepts, constexpr)
+		\item Contiguous data structure for cache locality
+		\item Outputs a limit aggregated order book
+	\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Interests and Activities}
+
+	\textbf{Competitive Programming:} Prologin (2019 \& 2020), ReadyTraderGo (2023), LeetCode, Codewars \\
+	\textbf{Chess:} (2/472) University Chess Championship (2021), Hosted the University Championship (2019) as the President of the school chess club.\\
+	\textbf{Sports} Rugby \ding{69} Golf \ding{69} Swimming
+
+\end{rSection}
+
+\end{document}
