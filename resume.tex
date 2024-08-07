@@ -37,22 +37,23 @@
 
 	\begin{rSubsection}{Embedded Software Engineer - Missile Optics and Electronics}{Apr 2024 - Sep 2024 (current)}{Thales LAS}{Elancourt, France}
 		\item Development of simulation environment for the Talios POD software
-    \item Developed an event driven IPC protocol using the inotify Linux API
-    \item Designed an Non-blocking IPC protocol using Sockets architecture for simulation platform based client that wraps the Win32 api which relies on polling
-    \item Documented the Talios/Rafale communication through the MIL-STD-1553b bus
+    \item Designed an event driven IPC protocol using the inotify Linux API
+    \item Developed a software interface to emulate Rafale commands sent to the Talios POD
+    \item Created a custom Flight Joystick driver based on the Win32 API
+    \item Documented the Talios/Rafale communication through a MIL-STD-1553b bus
 	\end{rSubsection}
 
 	\begin{rSubsection}{Quant Developer - Automated Market Making - Equities \& Derivatives}{Oct 2022 - Apr 2023}{BNP Paribas CIB}{Paris, France}
-		\item Created a log parser through PySpark used for metrics extraction from large log files
+		\item Created a log parser using PySpark for metrics extraction from large log files
 		\item Developed an extension to the Python pickle library allowing serialization of runtime polymorphic instances
 		\item Refactored the market simulation engine launcher used for backtesting automation
-		\item Implemented continuous integration for Python library development through 12 test cases
-		\item Rewrote the recuperation \& archiving process for production servers configuration files
+		\item Implemented continuous integration for Python library development through various test cases
+		\item Rewrote the retrieval \& archiving process for production servers configuration files
 	\end{rSubsection}
 
 	\begin{rSubsection}{Quant Developer - Automated Market Making - Equities \& Derivatives}{Jan 2022 - Aug 2022}{BNP Paribas CIB}{Hong Kong SAR, China}
     \item Developed a parser in \CC11 that generates H5 market data files from network packet captures
-		\item Integrated the parser to the Multicast Listener for Intraday data generation
+		\item Integrated the parser to the Multicast Listener for intraday data generation
 		\item Tested the order management system according to the Thailand Stock Exchange new regulation
 		\item Automated the generation of reports measuring market order success rate
 	\end{rSubsection}
@@ -63,8 +64,8 @@
 	\begin{rSubsection}{\CC20}{}{}{}
     \item Compile-Time dispatch: constexpr, template metaprogramming
     \item Toolchain: CMake, Ninja, Conan, Catch2, Clang Sanitizers, godbolt
-    \item Concurrency: Lock-Free using std::atomic, Spinlock, Thread Pool, SIMD
-    \item Cache optimization: Contiguous data structures, Hashing strategies
+    \item Concurrency: Lock-Free using std::atomic, Coroutine, Thread Pool, SIMD
+    \item Cache optimization: Contiguous allocation using custom allocator,  Hashing strategies
 	\end{rSubsection}
   \begin{rSubsection}{Python 3.9}{}{}{}
     \item Library development: Matching built-in modules standards, decorators, metaprogramming
